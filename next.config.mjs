@@ -1,7 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export',
-    distDir: 'out',
+  output: "export",
+  images: {
+    unoptimized: true,
+    remotePatterns: [
+      {
+        hostname: "i.pravatar.cc",
+      },
+    ],
+  },
 };
 
 export default nextConfig;
