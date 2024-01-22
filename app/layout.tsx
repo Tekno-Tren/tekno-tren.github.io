@@ -24,10 +24,7 @@ export default function RootLayout({
         {/* Tags for SEO */}
         <title>{metadata.title as string}</title>
         <meta name="description" content={metadata.description as string} />
-        <meta
-          name="keywords"
-          content="Tekno Tren, software, house"
-        />
+        <meta name="keywords" content="Tekno Tren, software, house" />
         <meta name="author" content="Guilherme Bustamante" />
         <link rel="canonical" href="https://tekno-tren.github.io/" />
         <meta name="robots" content="index, follow" />

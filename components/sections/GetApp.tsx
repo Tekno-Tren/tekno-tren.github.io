@@ -20,7 +20,7 @@ const GetApp = () => {
     >
       <section
         ref={ref}
-        className="flexCenter w-full flex-col pb-28 xl:pb-52 mt-10 xl:mt-28 relative"
+        className="flexCenter relative mt-10 w-full flex-col pb-28 xl:mt-28 xl:pb-52"
       >
         <motion.div
           variants={fadeIn("down", 0)}
@@ -54,12 +54,12 @@ const GetApp = () => {
                 />
               </div>
             </div>
-            <div className="flex flex-1 items-center justify-end visible xl:invisible">
+            <div className="visible flex flex-1 items-center justify-end xl:invisible">
               <Image src="/phones.png" alt="Phones" width={550} height={870} />
             </div>
           </div>
         </motion.div>
-        <div className="xl:flex flex-1 items-center justify-end absolute right-10 z-50 hidden">
+        <div className="absolute right-10 z-50 hidden flex-1 items-center justify-end xl:flex">
           <Image src="/phones.png" alt="Phones" width={550} height={870} />
         </div>
       </section>

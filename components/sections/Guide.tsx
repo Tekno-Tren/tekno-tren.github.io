@@ -27,8 +27,8 @@ const Guide = () => {
               Uncomplicated Navigation
             </h2>
             <p className="regular-16 text-gray-30 xl:max-w-[520px]">
-              With Tekno Tren, you will always be on the right path thanks to our
-              support for offline maps when you are disconnected from the
+              With Tekno Tren, you will always be on the right path thanks to
+              our support for offline maps when you are disconnected from the
               internet. Invite friends, family and colleagues to enjoy nature,
               exploring picturesque valleys and reaching mountain peaks.
             </p>
