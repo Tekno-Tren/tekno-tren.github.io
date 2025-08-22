@@ -36,7 +36,7 @@ const Features = () => {
           </div>
 
           <div className="z-20 flex w-full flex-col lg:w-[60%]">
-            <h2 className="bold-32 lg:bold-64">Functionalities</h2>
+            <h2 className="bold-32 lg:bold-64">Layanan Kami</h2>
             <motion.div
               variants={fadeIn("right", 0)}
               initial="hidden"

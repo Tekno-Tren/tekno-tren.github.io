@@ -1,92 +1,84 @@
 // NAVIGATION
 export const NAV_LINKS = [
-  { href: "/", key: "home", label: "Home" },
-  { href: "/", key: "about", label: "About" },
-  { href: "/", key: "services", label: "Services" },
-  { href: "/", key: "pricing ", label: "Pricing" },
-  { href: "/", key: "contact", label: "Contact" },
+  { href: "/", key: "home", label: "Beranda" },
+  { href: "/about", key: "about", label: "Tentang Kami" },
+  { href: "/services", key: "services", label: "Layanan" },
+  { href: "/portfolio", key: "portfolio", label: "Portofolio" },
+  { href: "/contact", key: "contact", label: "Kontak" },
 ];
 
-// CAMP SECTION
-export const PEOPLE_URL = [
-  "https://i.pravatar.cc/200",
-  "https://i.pravatar.cc/201",
-  "https://i.pravatar.cc/202",
-  "https://i.pravatar.cc/203",
-];
 
-// FEATURES SECTION
+
+// FEATURES SECTION (Software House)
 export const FEATURES = [
   {
-    title: "24/7 Availability",
-    icon: "LuWifiOff",
-    variant: "green",
+    title: "Pengembangan Perangkat Lunak Kustom",
+    icon: "HiCode",
+    variant: "blue",
     description:
-      "At Tekno Tren, we believe our users deserve the best. That's why our maps are always available, 24 hours a day, 7 days a week, even in places without internet.",
+      "Kami membangun solusi perangkat lunak yang skalabel, aman, dan andal sesuai kebutuhan bisnis Anda, mulai dari aplikasi web hingga sistem enterprise.",
   },
   {
-    title: "Create Adventure Plans",
-    icon: "HiCalendarDays",
-    variant: "green",
+    title: "Desain UI/UX",
+    icon: "HiOutlineColorSwatch",
+    variant: "purple",
     description:
-      "Create exciting adventures with your family and friends and enjoy special offers on custom packages. Enjoy your adventures without worries with Tekno Tren.",
+      "Tim kreatif kami menghadirkan pengalaman pengguna yang intuitif dan menarik untuk memuaskan pelanggan Anda dan mendorong hasil bisnis.",
   },
   {
-    title: "Voice Command Navigation",
-    icon: "HiVolumeUp",
+    title: "Solusi Cloud & DevOps",
+    icon: "HiCloudUpload",
     variant: "green",
     description:
-      "Enjoy voice guidance while exploring, ensuring you never get lost during your exciting adventures. The peace of mind of having a reliable guide every step of the way.",
+      "Manfaatkan kekuatan cloud dengan keahlian kami dalam deployment, migrasi, dan otomatisasi untuk efisiensi maksimal.",
   },
   {
-    title: "Discover New Destinations",
-    icon: "HiLocationMarker",
-    variant: "laranja",
+    title: "Dukungan Khusus",
+    icon: "HiSupport",
+    variant: "orange",
     description:
-      "Explore a diversity of new exciting destinations that are added monthly. We are constantly striving for excellence for your next adventure.",
+      "Tim kami menyediakan dukungan dan pemeliharaan berkelanjutan agar sistem Anda berjalan lancar dan bisnis Anda tetap unggul.",
   },
 ];
 
-// FOOTER SECTION
+// FOOTER SECTION (Software House)
 export const FOOTER_LINKS = [
   {
-    title: "Institutional",
+    title: "Perusahaan",
     links: [
-      "About Tekno Tren",
-      "Work with Us",
-      "Contact",
-      "Mission and Values",
-      "Tekno Tren Team",
+      "Tentang Kami",
+      "Blog",
+      "Kontak",
+      "Kebijakan Privasi",
     ],
   },
   {
-    title: "General Questions",
+    title: "Layanan",
     links: [
-      "App Operation",
-      "Payment Methods",
+      "Pengembangan Web",
+      "Pengembangan Mobile",
+      "Desain UI/UX",
+      "Solusi Cloud",
+      "Konsultasi",
+    ],
+  },
+  {
+    title: "Sumber Daya",
+    links: [
+      "Portofolio",
+      "Studi Kasus",
+      "Testimoni",
       "FAQ",
-      "Quality Guarantee",
-      "Return Policy",
-    ],
-  },
-  {
-    title: "Support",
-    links: [
-      "Support Contact",
-      "User Guide",
-      "Technical Problems",
-      "Help Center",
-      "Live Chat",
+      "Dukungan",
     ],
   },
 ];
 
 export const SOCIALS = {
-  title: "Social",
+  title: "Sosial Media",
   links: [
-    { icon: "FaLinkedinIn", href: "https://www.linkedin.com/in/gui-bus/" },
-    { icon: "FaGithub", href: "https://github.com/gui-bus" },
-    { icon: "FaInstagram", href: "https://www.instagram.com/guibus_dev/" },
-    { icon: "FaXTwitter", href: "https://twitter.com/guibus_dev" },
+    { icon: "FaLinkedinIn", href: "https://www.linkedin.com/company/teknotren-house" },
+    { icon: "FaInstagram", href: "https://www.instagram.com/teknotren_house/" },
+    { icon: "FaTiktok", href: "https://www.tiktok.com/@teknotren_house" },
   ],
 };

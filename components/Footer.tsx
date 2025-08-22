@@ -6,15 +6,13 @@ import React from "react";
 import {
   FaLinkedinIn,
   FaInstagram,
-  FaXTwitter,
-  FaGithub,
+  FaTiktok,
 } from "react-icons/fa6";
 
 const iconMap: { [key: string]: JSX.Element } = {
   FaLinkedinIn: <FaLinkedinIn size={20} />,
   FaInstagram: <FaInstagram size={20} />,
-  FaXTwitter: <FaXTwitter size={20} />,
-  FaGithub: <FaGithub size={20} />,
+  FaTiktok: <FaTiktok size={20} />,
 };
 
 const Footer = () => {
@@ -76,7 +74,7 @@ const Footer = () => {
           &copy; {currentYear}{" "}
           <Link
             className="transition-all duration-300 hover:font-bold hover:text-green-50"
-            href="https://www.linkedin.com/in/gui-bus/"
+            href="https://www.linkedin.com/company/teknotren-house"
             target="_blank"
           >
             Tekno Tren{" "}
