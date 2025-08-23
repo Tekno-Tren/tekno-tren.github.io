@@ -2,7 +2,7 @@ import { NAV_LINKS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "./common/Button";
-import { LuUser2, LuMenu } from "react-icons/lu";
+import { LuUser, LuMenu } from "react-icons/lu";
 
 import {
   Sheet,
@@ -45,7 +45,7 @@ const Navbar = () => {
           <Button
             type="button"
             title="Login"
-            icon_start={<LuUser2 size={20} />}
+            icon_start={<LuUser size={20} />}
             variant="btn_dark"
           />
         </div>
@@ -62,7 +62,7 @@ const Navbar = () => {
                   <Button
                     type="button"
                     title="Login"
-                    icon_start={<LuUser2 size={20} />}
+                    icon_start={<LuUser size={20} />}
                     variant="btn_dark_mobile"
                   />
                 </div>
