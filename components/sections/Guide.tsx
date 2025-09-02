@@ -16,7 +16,7 @@ const Guide = () => {
       animate={inView ? "show" : "hidden"}
       exit="hidden"
     >
-      <section ref={ref} className="flexCenter mt-10 flex-col">
+      <section ref={ref} className="flex items-center justify-center mt-10 flex-col">
         <div className=" padding-container container w-full pb-24">
           <p className="regular-18 mb-3 uppercase text-green-50">
             We are here for you
@@ -43,7 +43,7 @@ const Guide = () => {
         >
           <div
             ref={refImage}
-            className="flexCenter relative w-full md:container"
+            className="flex items-center justify-center relative w-full md:container"
           >
             <Image
               src="/img-5.png"
@@ -61,9 +61,9 @@ const Guide = () => {
                 height={100}
                 className="h-full w-auto"
               />
-              <div className="flexBetween flex-col">
+              <div className="flex items-center justify-between  flex-col">
                 <div className="flex w-full flex-col">
-                  <div className="flexBetween w-full">
+                  <div className="flex items-center justify-between  w-full">
                     <p className="regular-16 text-gray-20">Destination</p>
                     <p className="bold-16 text-green-50">52 min</p>
                   </div>

@@ -20,7 +20,7 @@ const GetApp = () => {
     >
       <section
         ref={ref}
-        className="flexCenter relative mt-10 w-full flex-col pb-28 xl:mt-28 xl:pb-52"
+        className="flex items-center justify-center relative mt-10 w-full flex-col pb-28 xl:mt-28 xl:pb-52"
       >
         <motion.div
           variants={fadeIn("down", 0)}

@@ -16,8 +16,8 @@ import { Separator } from "./ui/separator";
 
 const Navbar = () => {
   return (
-    <header>
-      <nav className="flexBetween padding-container container relative z-30 py-5">
+    <header className="flex justify-center">
+      <nav className="flex items-center justify-between fixed max-w-[64rem] w-full z-30 py-5 bg-white">
         <Link href="/">
           <Image
             src="/logo.png"
@@ -34,14 +34,14 @@ const Navbar = () => {
             <Link
               href={link.href}
               key={link.key}
-              className="regular-16 flexCenter cursor-pointer pb-1.5 text-gray-50 transition-all hover:font-bold"
+              className="regular-16 flex items-center justify-center cursor-pointer pb-1.5 text-gray-50 transition-all hover:font-bold"
             >
               {link.label}
             </Link>
           ))}
         </ul>
 
-        <div className="lg:flexCenter hidden">
+        <div className="lg:flex lg:items-center lg:justify-center hidden">
           <Button
             type="button"
             title="Login"
@@ -73,7 +73,7 @@ const Navbar = () => {
                       <Link
                         href={link.href}
                         key={link.key}
-                        className="regular-18 flexCenter cursor-pointer pb-1.5 text-gray-50 transition-all hover:font-bold"
+                        className="regular-18 flex items-center justify-center cursor-pointer pb-1.5 text-gray-50 transition-all hover:font-bold"
                       >
                         {link.label}
                       </Link>

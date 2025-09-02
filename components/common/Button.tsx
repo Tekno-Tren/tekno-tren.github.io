@@ -20,7 +20,7 @@ const Button = ({
   return (
     <button
       type={type}
-      className={`flexCenter gap-3 rounded-full border ${variant} ${full && "w-full"}`}
+      className={`flex items-center justify-center gap-3 rounded-full border ${variant} ${full && "w-full"}`}
     >
       {icon_start && icon_start}
       <label className="bold-16 cursor-pointer whitespace-nowrap">

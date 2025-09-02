@@ -21,7 +21,7 @@ const Features = () => {
     >
       <section
         ref={ref}
-        className="flexCenter container flex-col overflow-hidden bg-feature-bg bg-center bg-no-repeat py-24"
+        className="flex items-center justify-center container flex-col overflow-hidden bg-feature-bg bg-center bg-no-repeat py-24"
       >
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
