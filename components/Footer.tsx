@@ -19,8 +19,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="flex items-center justify-center mb-24">
-      <div className="padding-container container flex w-full flex-col gap-14">
+    <footer className="flex items-center justify-center py-6">
+      <div className="padding-container container flex w-full flex-col gap-6">
         <div className="flex flex-col items-start justify-center gap-[10%] md:flex-row">
           <Link href="/" className="mb-10">
             <Image
