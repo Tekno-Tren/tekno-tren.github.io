@@ -23,6 +23,14 @@ const Button = ({
     switch (variant) {
       case "btn_dark":
         return "border-black bg-black text-white px-6 py-3 hover:bg-black/80";
+      case "btn_blue":
+        return "border-blue-500 bg-blue-500 text-white px-6 py-3 hover:bg-blue-600";
+      case "btn_green":
+        return "border-green-500 bg-green-500 text-white px-6 py-3 hover:bg-green-600";
+      case "btn_purple":
+        return "border-purple-500 bg-purple-500 text-white px-6 py-3 hover:bg-purple-600";
+      case "btn_orange":
+        return "border-orange-500 bg-orange-500 text-white px-6 py-3 hover:bg-orange-600";
       case "btn_dark_outline":
         return "border-black bg-white text-black px-6 py-3 hover:bg-gray-100";
       case "btn_blue_outline":

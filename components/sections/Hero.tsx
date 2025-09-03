@@ -27,7 +27,7 @@ const Hero = () => {
         className="container flex min-h-screen max-w-[64rem] flex-col py-10 lg:min-h-[42rem] lg:py-20"
       >
         <div ref={refInfo} className="z-20 flex flex-1 flex-col md:flex-row">
-          <div className="flex w-full md:w-1/2 flex-col justify-center min-h-[60vh] lg:min-h-[36rem]">
+          <div className="flex w-full md:w-1/2 flex-col justify-center min-h-[60vh] md:min-h-[32rem] lg:min-h-[36rem]">
             <h1 className="bold-32 text-center md:text-left md:bold-40 lg:bold-52 tracking-tighter">
               Solusi Digital untuk Kebutuhan Anda
             </h1>
@@ -40,12 +40,12 @@ const Hero = () => {
               <Button
                 type="button"
                 title="Konsultasi Sekarang"
-                variant="btn_dark"
+                variant="btn_green"
               />
             </div>
           </div>
           <div className="flex w-full md:w-1/2 flex-col items-center justify-center">
-            <div className="relative md:absolute z-0 max-w-[400px] md:max-w-[600px] -top-24 md:top-auto">
+            <div className="relative md:absolute z-0 max-w-[400px] md:max-w-[600px] -top-12 sm:-top-20 md:top-auto md:translate-x-4 lg:translate-x-12">
               <Image
                 src="/hero-img.png"
                 alt="Hero Image"

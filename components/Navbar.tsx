@@ -47,7 +47,7 @@ const Navbar = () => {
               type="button"
               title="Login"
               icon_start={<LuUser size={20} />}
-              variant="btn_dark"
+              variant="btn_green"
             />
           </div>
 
