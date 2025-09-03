@@ -1,6 +1,7 @@
 "use client";
 
 import Hero from "@/components/sections/Hero";
+import Clients from "@/components/sections/Clients";
 import Features from "@/components/sections/Features";
 import Portfolio from "@/components/sections/Portfolio";
 import About from "@/components/sections/About";
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <>
   <Hero />
+  <Clients />
   <Features />
   <Portfolio />
   <About />
