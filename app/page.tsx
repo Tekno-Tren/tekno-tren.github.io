@@ -14,7 +14,6 @@ export default function Home() {
   <Clients />
   <Portfolio />
   <Price />
-  <About />
   <Contact />
     </>
   );
