@@ -1,7 +1,7 @@
 "use client";
 
-import Features from "@/components/sections/Features";
+import Price from "@/components/sections/Price";
 
 export default function ServicesPage() {
-  return <Features />;
+  return <Price />;
 }
