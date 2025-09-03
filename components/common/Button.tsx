@@ -20,10 +20,10 @@ const Button = ({
   return (
     <button
       type={type}
-      className={`flex items-center justify-center gap-3 rounded-full border ${variant} ${full && "w-full"}`}
+      className={`flex items-center justify-center gap-3 rounded-full border ${variant}${full === undefined ? "" : " w-full"}`}
     >
       {icon_start && icon_start}
-      <label className="bold-16 cursor-pointer whitespace-nowrap">
+      <label className="text-xs bold-16 cursor-pointer whitespace-nowrap">
         {title}
       </label>
       {icon_end && icon_end}
