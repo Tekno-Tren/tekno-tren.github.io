@@ -41,7 +41,7 @@ const Footer = () => {
                     <Link
                       href="/"
                       key={link}
-                      className="transition-all duration-300 hover:font-bold hover:text-green-50"
+                      className="transition-all duration-300 hover:font-bold hover:text-green-500"
                     >
                       {link}
                     </Link>
@@ -57,7 +57,7 @@ const Footer = () => {
                       key={link.href}
                       target="_blank"
                       href={link.href}
-                      className="transition-all duration-300 hover:text-green-50"
+                      className="transition-all duration-300 hover:text-green-500"
                     >
                       {iconMap[link.icon]}
                     </Link>
@@ -73,7 +73,7 @@ const Footer = () => {
         <p className="regular-14 w-full text-center text-gray-30">
           &copy; {currentYear}{" "}
           <Link
-            className="transition-all duration-300 hover:font-bold hover:text-green-50"
+            className="transition-all duration-300 hover:font-bold hover:text-green-500"
             href="https://www.linkedin.com/company/teknotren-house"
             target="_blank"
           >

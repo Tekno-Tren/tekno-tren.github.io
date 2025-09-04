@@ -12,7 +12,7 @@ const About = () => (
   >
     <h2 className="bold-40 mb-6 text-center">Tentang Kami</h2>
     <p className="regular-18 mx-auto max-w-2xl text-center text-gray-700">
-      Tekno Tren adalah software house terkemuka yang berkomitmen menghadirkan solusi teknologi inovatif untuk berbagai skala bisnis. Tim kami ahli dalam pengembangan web dan mobile, desain UI/UX, serta solusi cloud. Kami bersemangat membantu klien mencapai tujuan mereka melalui teknologi, kreativitas, dan dukungan yang andal.
+      Kami adalah Tekno Tren, sebuah software house yang berkomitmen menghadirkan solusi teknologi inovatif untuk berbagai skala bisnis. Kami bersemangat membantu klien mencapai tujuan mereka melalui teknologi, kreativitas, dan dukungan yang andal.
     </p>
   </motion.section>
 );

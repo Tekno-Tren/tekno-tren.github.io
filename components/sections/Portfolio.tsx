@@ -1,63 +1,18 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/animation/variants";
 import { useInView } from "react-intersection-observer";
+import { portfolioItems, getAllCategories } from "@/data/portfolio";
 
 const Portfolio = () => {
   const [ref, inView] = useInView({ triggerOnce: false, threshold: 0.2 });
   const [activeCategory, setActiveCategory] = useState("all");
 
-  // Define your website categories
-  const categories = [
-    { id: "all", name: "Semua" },
-    { id: "company", name: "Company Profile" },
-    { id: "ecommerce", name: "E-Commerce" },
-    { id: "elearning", name: "E-Learning" },
-    { id: "landing", name: "Landing Page" },
-    { id: "blog", name: "Blog/News" },
-    { id: "custom", name: "Custom System" },
-  ];
-
-  // Sample portfolio items with multiple categories per project
-  const portfolioItems = [
-    {
-      id: 1,
-      title: "PT. ISBI Corporate Website",
-      categories: ["company", "elearning"],
-      image: "/portfolio/project1.jpg",
-      description: "Website perusahaan dengan tampilan modern dan responsif",
-    },
-    {
-      id: 2,
-      title: "Trashopp Online Store",
-      categories: ["company", "ecommerce"],
-      image: "/portfolio/project2.jpg",
-      description: "Toko online dengan sistem pembayaran terintegrasi",
-    },
-    {
-      id: 3,
-      title: "PT. Digital Sistem Jawadwipa",
-      categories: ["company", "blog"],
-      image: "/portfolio/project3.jpg",
-      description: "Website resmi perusahaan dengan fitur lengkap",
-    },
-    {
-      id: 4,
-      title: "SIKader PC PMII Surabaya",
-      categories: ["custom"],
-      image: "/portfolio/project4.jpg",
-      description: "Portal berita dan informasi organisasi",
-    },
-    {
-      id: 5,
-      title: "Reka Official",
-      categories: ["company", "elearning"],
-      image: "/portfolio/project5.jpg",
-      description: "Platform e-learning untuk produk fashion lokal",
-    },
-  ];
+  // Get categories from our data file
+  const categories = getAllCategories();
 
   // Filter items based on active category
   const filteredItems = activeCategory === "all" 
@@ -103,19 +58,21 @@ const Portfolio = () => {
           {filteredItems.map((item, index) => (
             <motion.div
               key={item.id}
-              className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <div className="relative h-52 overflow-hidden">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  fill
-                  className="object-cover transition-transform duration-500 hover:scale-110"
-                />
-              </div>
+              <Link href={`/portfolio/${item.slug}`}>
+                <div className="relative h-52 overflow-hidden">
+                  <Image
+                    src={item.images.main}
+                    alt={item.title}
+                    fill
+                    className="object-cover transition-transform duration-500 hover:scale-110"
+                  />
+                </div>
+              </Link>
               <div className="p-6">
                 {/* Show multiple category tags */}
                 <div className="flex flex-wrap gap-2 mb-3">
@@ -128,8 +85,10 @@ const Portfolio = () => {
                     </span>
                   ))}
                 </div>
-                <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-                <p className="text-gray-600">{item.description}</p>
+                <Link href={`/portfolio/${item.slug}`} className="block hover:text-blue-600 transition-colors">
+                  <h3 className="text-xl font-bold mb-2">{item.title}</h3>
+                </Link>
+                <p className="text-gray-600 mb-4">{item.description}</p>
               </div>
             </motion.div>
           ))}

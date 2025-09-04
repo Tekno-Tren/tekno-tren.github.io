@@ -1,10 +1,10 @@
 // NAVIGATION
 export const NAV_LINKS = [
   { href: "/", key: "home", label: "Beranda" },
-  { href: "/about", key: "about", label: "Tentang Kami" },
   { href: "/services", key: "services", label: "Layanan" },
   { href: "/portfolio", key: "portfolio", label: "Portofolio" },
   { href: "/contact", key: "contact", label: "Kontak" },
+  { href: "/about", key: "about", label: "Tentang" },
 ];
 
 
@@ -91,18 +91,16 @@ export const FOOTER_LINKS = [
   {
     title: "Layanan",
     links: [
-      "Pengembangan Web",
-      "Pengembangan Mobile",
-      "Desain UI/UX",
-      "Solusi Cloud",
       "Konsultasi",
+      "Pembuatan & Pengembangan Web",
+      "Digital Marketing",
+      "Solusi Kustom",
     ],
   },
   {
     title: "Sumber Daya",
     links: [
       "Portofolio",
-      "Studi Kasus",
       "Testimoni",
       "FAQ",
       "Dukungan",

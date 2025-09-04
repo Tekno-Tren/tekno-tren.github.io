@@ -39,7 +39,7 @@ const Price = () => {
           >
             <div
               ref={refFeatures}
-              className="grid gap-6 md:grid-cols-2 lg:grid-cols-3"
+              className="grid gap-6 md:grid-cols-2"
             >
               {FEATURES.map((feature) => (
                 <ServicePackage
