@@ -3,5 +3,5 @@
 import Portfolio from "@/components/sections/Portfolio";
 
 export default function PortfolioPage() {
-  return <Portfolio />;
+  return <Portfolio showAll={true} />;
 }

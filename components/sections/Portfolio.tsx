@@ -7,7 +7,11 @@ import { fadeIn } from "@/animation/variants";
 import { useInView } from "react-intersection-observer";
 import { portfolioItems, getAllCategories } from "@/data/portfolio";
 
-const Portfolio = () => {
+interface PortfolioProps {
+  showAll?: boolean;
+}
+
+const Portfolio = ({ showAll = false }: PortfolioProps) => {
   const [ref, inView] = useInView({ triggerOnce: false, threshold: 0.2 });
   const [activeCategory, setActiveCategory] = useState("all");
 
@@ -15,9 +19,14 @@ const Portfolio = () => {
   const categories = getAllCategories();
 
   // Filter items based on active category
-  const filteredItems = activeCategory === "all" 
+  let filteredItems = activeCategory === "all" 
     ? portfolioItems 
     : portfolioItems.filter(item => item.categories.includes(activeCategory));
+    
+  // Limit items if not showing all
+  if (!showAll) {
+    filteredItems = filteredItems.slice(0, 6);
+  }
 
   return (
     <motion.div
@@ -94,12 +103,16 @@ const Portfolio = () => {
           ))}
         </div>
 
-        {/* Call to Action */}
-        <div className="text-center mt-16">
-          <button className="px-8 py-3 bg-gradient-to-r from-green-500 to-blue-600 text-white font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-            Lihat Semua Portofolio
-          </button>
-        </div>
+        {/* Call to Action - Only show on homepage */}
+        {!showAll && (
+          <div className="text-center mt-16">
+            <Link href="/portfolio">
+              <span className="inline-block px-8 py-3 bg-gradient-to-r from-green-500 to-blue-600 text-white font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                Lihat Semua Portofolio
+              </span>
+            </Link>
+          </div>
+        )}
       </div>
     </motion.div>
   );
