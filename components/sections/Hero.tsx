@@ -61,7 +61,7 @@ const Hero = () => {
                 inView
                   ? {
                       opacity: 1,
-                      y: 0,
+                      y: -108,
                       rotate: [0, 360],
                       transition: {
                         opacity: { duration: 0.5 },
@@ -77,7 +77,7 @@ const Hero = () => {
                   : "hidden"
               }
               exit="hidden"
-              className="absolute w-36 self-end"
+              className="absolute w-36 self-start -z-10"
             >
               <Image
                 src="/element-1.png"
@@ -87,9 +87,42 @@ const Hero = () => {
                 height={144}
               />
             </motion.div>
+            <motion.div
+              variants={fadeIn("up", 0)}
+              initial="hidden"
+              animate={
+                inView
+                  ? {
+                      opacity: 1,
+                      y: -156,
+                      rotate: [0, 360],
+                      transition: {
+                        opacity: { duration: 0.5 },
+                        y: { duration: 0.5 },
+                        rotate: {
+                          duration: 10,
+                          ease: "linear",
+                          repeat: Infinity,
+                          repeatType: "loop",
+                        },
+                      },
+                    }
+                  : "hidden"
+              }
+              exit="hidden"
+              className="absolute w-18 -z-10"
+            >
+              <Image
+                src="/element-1.png"
+                alt="Element Image"
+                className="object-cover"
+                width={72}
+                height={72}
+              />
+            </motion.div>
           </div>
         </div>
-        <div className="relative mt-6 z-20 bottom-40 md:bottom-16 overflow-hidden rounded-3xl bg-gradient-to-r from-green-500 to-blue-500/80 p-8 text-white backdrop-blur-sm">
+        <div className="relative mt-6 z-20 bottom-40 md:bottom-16 overflow-hidden rounded-3xl bg-gradient-to-r from-green-500 to-blue-500/80 p-4 sm:p-8 text-white backdrop-blur-sm">
           <div className="absolute -left-24 -top-24 -z-20 opacity-50">
             <Image
               src="/element-2.png"
@@ -103,7 +136,7 @@ const Hero = () => {
             <div className="flex flex-col items-center justify-center">
               <FaMagic className="text-3xl" />
               <h2 className="font-bold">Fitur Lengkap</h2>
-              <p className="text-sm">
+              <p className="text-xs sm:text-sm">
                 Dilengkapi dengan fitur-fitur terbaik untuk membangun bisnis
                 Anda.
               </p>
@@ -111,21 +144,21 @@ const Hero = () => {
             <div className="flex flex-col items-center justify-center">
               <FaMoneyBillWave className="text-3xl" />
               <h2 className="font-bold">Harga Terjangkau</h2>
-              <p className="text-sm">
+              <p className="text-xs sm:text-sm">
                 Dapatkan harga terbaik untuk layanan kami.
               </p>
             </div>
             <div className="flex flex-col items-center justify-center">
               <FaWrench className="text-3xl" />
               <h2 className="font-bold">Dukungan Teknis</h2>
-              <p className="text-sm">
+              <p className="text-xs sm:text-sm">
                 Dapatkan dukungan teknis terbaik untuk bisnis Anda.
               </p>
             </div>
             <div className="flex flex-col items-center justify-center">
               <RxUpdate className="text-3xl" />
               <h2 className="font-bold">Kustomisasi Sesuai Kebutuhan</h2>
-              <p className="text-sm">
+              <p className="text-xs sm:text-sm">
                 Dukungan kustomisasi sesuai kebutuhan bisnis Anda.
               </p>
             </div>
