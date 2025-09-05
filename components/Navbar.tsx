@@ -2,7 +2,8 @@ import { NAV_LINKS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "./common/Button";
-import { LuUser, LuMenu } from "react-icons/lu";
+import { LuMenu } from "react-icons/lu";
+import { FaWhatsapp } from "react-icons/fa";
 
 import {
   Sheet,
@@ -43,12 +44,14 @@ const Navbar = () => {
           </ul>
 
           <div className="lg:flex lg:items-center lg:justify-center hidden">
-            <Button
-              type="button"
-              title="Login"
-              icon_start={<LuUser size={20} />}
-              variant="btn_green"
-            />
+            <a href="https://wa.me/6285748783507?text=Halo%20Tekno%20Tren,%20saya%20tertarik%20dengan%20layanan%20Anda" target="_blank" rel="noopener noreferrer">
+              <Button
+                type="button"
+                title="Hubungi Kami"
+                icon_start={<FaWhatsapp size={20} />}
+                variant="btn_green"
+              />
+            </a>
           </div>
 
           <div className="inline-block cursor-pointer lg:hidden">
@@ -60,12 +63,14 @@ const Navbar = () => {
                 <SheetHeader>
                   <SheetTitle>Menu</SheetTitle>
                   <div className="py-4">
-                    <Button
-                      type="button"
-                      title="Login"
-                      icon_start={<LuUser size={20} />}
-                      variant="btn_dark_mobile"
-                    />
+                    <a href="https://wa.me/6285748783507?text=Halo%20Tekno%20Tren,%20saya%20tertarik%20dengan%20layanan%20Anda" target="_blank" rel="noopener noreferrer" className="block">
+                      <Button
+                        type="button"
+                        title="Hubungi Kami"
+                        icon_start={<FaWhatsapp size={20} />}
+                        variant="btn_dark_mobile"
+                      />
+                    </a>
                   </div>
                   <Separator className="my-4" />
                   <SheetDescription className="pt-4">
