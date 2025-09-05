@@ -37,15 +37,33 @@ const Footer = () => {
             {FOOTER_LINKS.map((columns) => (
               <FooterColumn title={columns.title} key={columns.title}>
                 <ul className="regular-14 flex flex-col gap-4 text-gray-30">
-                  {columns.links.map((link) => (
-                    <Link
-                      href="/"
-                      key={link}
-                      className="transition-all duration-300 hover:font-bold hover:text-green-500"
-                    >
-                      {link}
-                    </Link>
-                  ))}
+                  {columns.links.map((link) => {
+                    let href = "/";
+                    
+                    // Map links to their appropriate routes
+                    if (link === "Tentang Kami") href = "/about";
+                    if (link === "Blog") href = "/blog";
+                    if (link === "Kontak") href = "/contact";
+                    if (link === "Kebijakan Privasi") href = "/privacy-policy";
+                    if (link === "Konsultasi") href = "/consultation";
+                    if (link === "Pembuatan & Pengembangan Web") href = "/services";
+                    if (link === "Digital Marketing") href = "/services";
+                    if (link === "Solusi Kustom") href = "/services";
+                    if (link === "Portofolio") href = "/portfolio";
+                    if (link === "Testimoni") href = "/testimonials";
+                    if (link === "FAQ") href = "/faq";
+                    if (link === "Dukungan") href = "/support";
+                    
+                    return (
+                      <Link
+                        href={href}
+                        key={link}
+                        className="transition-all duration-300 hover:font-bold hover:text-green-500"
+                      >
+                        {link}
+                      </Link>
+                    );
+                  })}
                 </ul>
               </FooterColumn>
             ))}
