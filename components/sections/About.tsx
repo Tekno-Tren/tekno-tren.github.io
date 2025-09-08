@@ -271,7 +271,7 @@ const About = () => {
             <div className="text-center">
               <div className="relative w-32 h-40 mx-auto mb-4 overflow-hidden">
                 <Image
-                  src="/img-4.png"
+                  src="/teams/teams-7.png"
                   alt="Team Member"
                   fill
                   className="object-cover"
@@ -286,7 +286,7 @@ const About = () => {
             <div className="text-center">
               <div className="relative w-32 h-40 mx-auto mb-4 overflow-hidden">
                 <Image
-                  src="/img-4.png"
+                  src="/teams/teams-8.png"
                   alt="Team Member"
                   fill
                   className="object-cover"
