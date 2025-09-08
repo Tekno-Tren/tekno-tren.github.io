@@ -43,7 +43,7 @@ const Contact = () => {
               <div className="flex items-center justify-center w-14 h-14 bg-green-100 rounded-full mb-4">
                 <FaMapMarkerAlt className="text-green-700 text-2xl" />
               </div>
-              <h3 className="text-xl font-bold mb-3">Alamat</h3>
+              <h2 className="text-xl font-bold mb-3">Alamat</h2>
               <p className="text-gray-600">
                 Jl. Keputih Gg. II C No. 4, <br/>
                 Keputih, Sukolilo, <br/>
@@ -56,7 +56,7 @@ const Contact = () => {
               <div className="flex items-center justify-center w-14 h-14 bg-green-100 rounded-full mb-4">
                 <FaWhatsapp className="text-green-700 text-2xl" />
               </div>
-              <h3 className="text-xl font-bold mb-3">Nomor Whatsapp</h3>
+              <h2 className="text-xl font-bold mb-3">Nomor Whatsapp</h2>
               <Link href="https://wa.me/6285748783507" className="text-gray-600 hover:text-green-700 transition-colors mb-1">
                 0857-4878-3507
               </Link>
@@ -67,7 +67,7 @@ const Contact = () => {
               <div className="flex items-center justify-center w-14 h-14 bg-green-100 rounded-full mb-4">
                 <MdEmail className="text-green-700 text-2xl" />
               </div>
-              <h3 className="text-xl font-bold mb-3">Alamat Email</h3>
+              <h2 className="text-xl font-bold mb-3">Alamat Email</h2>
               <Link href="mailto:teknotrenhouse@gmail.com" className="text-gray-600 hover:text-green-700 transition-colors">
                 teknotrenhouse@gmail.com
               </Link>

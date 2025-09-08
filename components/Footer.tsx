@@ -70,16 +70,26 @@ const Footer = () => {
             <div className="flex flex-col gap-5">
               <FooterColumn title={SOCIALS.title} key={SOCIALS.title}>
                 <ul className="regular-14 flex gap-4 text-gray-30">
-                  {SOCIALS.links.map((link) => (
-                    <Link
-                      key={link.href}
-                      target="_blank"
-                      href={link.href}
-                      className="transition-all duration-300 hover:text-green-500"
-                    >
-                      {iconMap[link.icon]}
-                    </Link>
-                  ))}
+                  {SOCIALS.links.map((link) => {
+                    // Accessible label for each social link
+                    let label = '';
+                    if (link.icon === 'FaLinkedinIn') label = 'LinkedIn Tekno Tren';
+                    if (link.icon === 'FaInstagram') label = 'Instagram Tekno Tren';
+                    if (link.icon === 'FaTiktok') label = 'TikTok Tekno Tren';
+                    return (
+                      <li key={link.href}>
+                        <Link
+                          target="_blank"
+                          href={link.href}
+                          className="transition-all duration-300 hover:text-green-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-500 rounded"
+                          aria-label={label}
+                        >
+                          <span aria-hidden="true">{iconMap[link.icon]}</span>
+                          <span className="sr-only">{label}</span>
+                        </Link>
+                      </li>
+                    );
+                  })}
                 </ul>
               </FooterColumn>
             </div>

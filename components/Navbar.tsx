@@ -56,8 +56,9 @@ const Navbar = () => {
 
           <div className="inline-block cursor-pointer lg:hidden">
             <Sheet>
-              <SheetTrigger>
-                <LuMenu size={32} />
+              <SheetTrigger aria-label="Buka menu navigasi" className="focus:outline-none focus-visible:ring-2 focus-visible:ring-green-500 rounded">
+                <span className="sr-only">Buka menu navigasi</span>
+                <LuMenu size={32} aria-hidden="true" />
               </SheetTrigger>
               <SheetContent>
                 <SheetHeader>
