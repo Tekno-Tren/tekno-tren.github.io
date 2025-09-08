@@ -8,7 +8,7 @@ import { MdEmail } from "react-icons/md";
 import Link from "next/link";
 
 const Contact = () => {
-  const [ref, inView] = useInView({ triggerOnce: false, threshold: 0.2 });
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 });
 
   return (
     <motion.section

@@ -10,9 +10,7 @@ import { fadeIn } from "@/animation/variants";
 import { useInView } from "react-intersection-observer";
 
 const Hero = () => {
-  const [ref, inView] = useInView({ triggerOnce: false });
-  const [refInfo, inViewInfo] = useInView({ triggerOnce: false });
-  const [refMap, inViewMap] = useInView({ triggerOnce: false });
+  const [ref, inView] = useInView({ triggerOnce: true });
 
   return (
     <motion.div
@@ -26,7 +24,7 @@ const Hero = () => {
         ref={ref}
         className="container flex min-h-screen max-w-[64rem] flex-col py-10 lg:min-h-[42rem] lg:py-20"
       >
-        <div ref={refInfo} className="z-20 flex flex-1 flex-col md:flex-row">
+        <div className="z-20 flex flex-1 flex-col md:flex-row">
           <div className="flex w-full md:w-1/2 flex-col justify-center min-h-[60vh] md:min-h-[32rem] lg:min-h-[36rem]">
             <h1 className="bold-32 text-center md:text-left md:bold-40 lg:bold-52 tracking-tighter">
               Solusi Digital untuk Kebutuhan Anda

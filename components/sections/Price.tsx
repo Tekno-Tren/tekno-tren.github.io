@@ -10,8 +10,8 @@ import { fadeIn } from "@/animation/variants";
 import { useInView } from "react-intersection-observer";
 
 const Price = () => {
-  const [ref, inView] = useInView({ triggerOnce: false });
-  const [refFeatures, inViewFeatures] = useInView({ triggerOnce: false });
+  const [ref, inView] = useInView({ triggerOnce: true });
+  const [refFeatures, inViewFeatures] = useInView({ triggerOnce: true });
 
   return (
     <motion.div

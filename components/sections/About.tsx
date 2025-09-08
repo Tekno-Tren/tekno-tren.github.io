@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "@/animation/variants";
 
 const About = () => {
-  const [ref, inView] = useInView({ triggerOnce: false, threshold: 0.2 });
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 });
 
   return (
     <motion.section

@@ -5,7 +5,7 @@ import { fadeIn } from "@/animation/variants";
 import { useInView } from "react-intersection-observer";
 
 const Clients = () => {
-  const [ref, inView] = useInView({ triggerOnce: false, threshold: 0.2 });
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 });
 
   // Sample client logos - replace with your actual client logos
   const clientLogos = [

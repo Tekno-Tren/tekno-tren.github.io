@@ -12,7 +12,7 @@ interface PortfolioProps {
 }
 
 const Portfolio = ({ showAll = false }: PortfolioProps) => {
-  const [ref, inView] = useInView({ triggerOnce: false, threshold: 0.2 });
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 });
   const [activeCategory, setActiveCategory] = useState("all");
 
   // Get categories from our data file
